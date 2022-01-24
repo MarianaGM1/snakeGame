@@ -6,6 +6,7 @@ In the course, the focus of the project was the functionality of the game, not t
 So, what I did was: 
 
     - Style it.
+    - Add sounds effects.
     - Add a 'Previous score'.
     - Add a modal that shows up when you lose. 
     - I separated the 'start' and the 'restart' functionalities.
