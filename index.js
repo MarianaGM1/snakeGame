@@ -35,6 +35,8 @@ currentSnake.forEach(index => squares[index].classList.add('snake'))
 
 
 function startGame() {
+    //remove the snake
+    currentSnake.forEach(index => squares[index].classList.remove('snake'))
     clearInterval(timerId)
     currentSnake = [212,211,210]
     score = 0
@@ -124,21 +126,21 @@ function generateApple() {
 } 
 generateApple()
 
-
-function control(e) {
-    if (e.keyCode === 39) {
+// 36,38,37,40
+function control(KeyboardEvent) {
+    if (KeyboardEvent.key === 'ArrowRight') {
         direction = 1
-    } else if (e.keyCode === 38) {
+    } else if (KeyboardEvent.key === 'ArrowUp') {
         direction = -width
-    } else if (e.keyCode === 37) {
+    } else if (KeyboardEvent.key === 'ArrowLeft') {
         direction = -1
-    } else if (e.keyCode === 40) {
+    } else if (KeyboardEvent.key === 'ArrowDown') {
         direction = +width
     }
 }
 
 
-document.addEventListener('keyup', control)
+document.addEventListener('keydown', control)
 startButton.addEventListener('click', startGame)
 restartButton.addEventListener('click', restartGame)
 overlay.addEventListener('click', function(event) {
