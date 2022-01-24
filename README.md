@@ -15,4 +15,4 @@ So, what I did was:
 
 
 
-Credits to Ania Kubow who taught the game.
+Credits to Ania Kubow who taught the game in Scrimba.
