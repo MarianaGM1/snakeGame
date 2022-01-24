@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Snake Game</title>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+        <link rel="stylesheet" href="index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class='main'>
+            <h1 style="margin: 0;">Snake Game</h1>
+            <h2>Score: <span id="score"></span></h2>
+            <h3>Previous score: <span id="prevScore"></span></h3>
+            <div class="grid"></div>
+            <button id="start">START</button>
+        </div>
+
+        <div id="overlay">
+            <div id="modal">
+                <h2>Game over!<br>
+                    🎮❌</h2>
+                <button id="restart">Try again!</button>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+    
+</html>
