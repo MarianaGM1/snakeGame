@@ -1,5 +1,6 @@
 # snakeGame
 Classic snake game I did as part of a project for Scrimba's Frontend Dev Career Path. It was done with Vanilla JavaScript.
+Module 4
 
 In the course, the focus of the project was the functionality of the game, not the style of it. 
 
